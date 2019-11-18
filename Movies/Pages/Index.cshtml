@@ -6,6 +6,32 @@
 
 <h1>Movies</h1>
 
+<form method="post">
+    <input type="text" name="search" />
+    <input type="submit" value="Search" />
+
+    <label>
+        <input type="checkbox" name="rating" value="G" />
+        Rated G
+    </label>
+    <label>
+        <input type="checkbox" name="rating" value="PG" />
+        Rated PG
+    </label>
+    <label>
+        <input type="checkbox" name="rating" value="PG-13" />
+        Rated PG-13
+    </label>
+    <label>
+        <input type="checkbox" name="rating" value="R" />
+        Rated R
+    </label>
+    <label>
+        <input type="checkbox" name="rating" value="NC-17" />
+        Rated NC-17
+    </label>
+</form>
+
 @foreach (Movie movie in Model.Movies)
 {
     <div class="movie-entry">
